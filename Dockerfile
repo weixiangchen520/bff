@@ -1,5 +1,5 @@
 FROM node:16.14.0-stretch AS BUILDER
-LABEL maintainer="xuewenG" \
+LABEL maintainer="weixiangchen" \
         site="https://github.com/weixiangchen520/bff.git"
 
 ENV MY_HOME=/root

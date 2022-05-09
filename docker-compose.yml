@@ -2,16 +2,8 @@ version: '3.8'
 services:
   bff:
     build: .
-    image: portal/bff
+    image: weixiangchen/bff
     container_name: bff
     restart: always
     volumes:
       - /etc/localtime:/etc/localtime:ro
-    environment:
-      - PORT=${SYNC_PLAY_PORT}
-      - CONTEXT_PATH=${SYNC_PLAY_CONTEXT_PATH}
-      - CORS_ORIGIN=${SYNC_PLAY_CORS_ORIGIN}
-      - MYSQL_HOST=${SYNC_PLAY_MYSQL_HOST}
-      - MYSQL_USER=${SYNC_PLAY_MYSQL_USER}
-      - MYSQL_PASSWORD=${SYNC_PLAY_MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${SYNC_PLAY_MYSQL_DATABASE}
